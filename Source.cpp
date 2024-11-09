@@ -26,11 +26,29 @@ int main()
 	cout <<"nhap b";
 	cin >>b;
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
+<<<<<<< HEAD
 	bool is_prime = is_Prime(a);
 	if (is_prime)
 		cout << "La so nguyen to" << endl;
 	else
 		cout << "Khong la so nguyen to" << endl;
+=======
+	if (KTSNT(a) == true)
+		cout << a << " la so nguyen to!";
+	else
+		cout << a << " khong la so nguyen to!";
+
+>>>>>>> ce9f04dd10fdb435953db5392fd31ccaf32a9257
 	system("pause");
 	return 0;
+}
+
+bool KTSNT(int a)
+{
+	if (a < 2)
+		return false;
+	for (int i = 2; i <= a / 2; i++)
+		if (a % i == 0)
+			return false;
+	return true;
 }
